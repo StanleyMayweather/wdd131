@@ -1,0 +1,23 @@
+/* temples-large.css (Large screen styles) */
+
+@media screen and (min-width: 700px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    #navMenu {
+        display: flex !important;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
