@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset */
 * {
   margin: 0;
@@ -24,3 +25,31 @@ body {
 .hero img:hover {
   transform: scale(1.01);
 }
+=======
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero img:hover {
+  transform: scale(1.01);
+}
+>>>>>>> 643f64aa335bce1394fc48aea4617dee94a8e95b

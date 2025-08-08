@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --main-color: #0074a2;
     --accent-color: #f2a900;
@@ -103,3 +104,110 @@ footer {
     left: 11px;
 }
 
+=======
+:root {
+    --main-color: #0074a2;
+    --accent-color: #f2a900;
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-stack);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.weather-icon-mobile {
+    width: 40px;
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+/* Larger screens */
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    .weather .icon::after {
+        content: "⛅";
+        /* Emoticon weather icon */
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+}
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    /* moves content (image) to the right */
+}
+
+.img1{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: -145px;
+    border-radius: 10px;
+    left: 11px;
+}
+
+>>>>>>> 643f64aa335bce1394fc48aea4617dee94a8e95b
