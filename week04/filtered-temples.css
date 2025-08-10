@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #0056b3;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav button {
+    margin: 0.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: white;
+    color: #0056b3;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    background: #003f82;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.temple-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.temple-card h3 {
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0056b3;
+    color: white;
+    margin-top: 2rem;
+}
