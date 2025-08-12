@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tickets — ManiFacility</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/fmlogo.png" alt="ManiFacility Logo" />
+            <h1>ManiFacility</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="tickets.html" class="active">Tickets</a>
+            <a href="assets.html">Assets</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Support Tickets</h2>
+            <p>Submit and manage maintenance and facility-related support tickets.</p>
+        </section>
+
+        <section class="tickets">
+            <div class="ticket-form">
+                <h3>Submit a Ticket</h3>
+                <form>
+                    <label>Issue Title:</label>
+                    <input type="text" placeholder="Brief description..." required>
+                    <label>Details:</label>
+                    <textarea placeholder="Describe the problem..." required></textarea>
+                    <label>Upload Image (optional):</label>
+                    <input type="file">
+                    <button type="submit">Submit Ticket</button>
+                </form>
+            </div>
+
+            <div class="ticket-list">
+                <h3>Recent Tickets</h3>
+                <ul>
+                    <li><strong>Air Conditioner Issue</strong> - Submitted Jan 10, 2025</li>
+                    <li><strong>Lighting in Hallway</strong> - Submitted Jan 8, 2025</li>
+                    <li><strong>Water Leakage</strong> - Submitted Jan 5, 2025</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ManiFacility. All rights reserved. <a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0b3d91;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+header nav a.active,
+header nav a:hover {
+    border-bottom: 2px solid #ffd700;
+}
+
+main {
+    padding: 20px;
+}
+
+.page-header {
+    margin-bottom: 20px;
+}
+
+.page-header h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+.hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}*/
+.hero {
+    text-align: center;
+    background: url('../images/hero.jpg') center center / cover no-repeat;
+    color: white;
+    padding: 40px 20px;
+    min-height: 250px;
+    /* allows it to expand with content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Tablet adjustments */
+@media (max-width: 992px) {
+    .hero {
+        min-height: 200px;
+        padding: 30px 15px;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+    .hero {
+        min-height: 150px;
+        padding: 20px 10px;
+        background-position: center top;
+        /* better focus on important part of image */
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+    .hero {
+        height: auto;
+        /* let content dictate height */
+        padding: 20px 10px;
+        background-size: cover;
+    }
+}
+
+.hero button {
+    background: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.asset-list {
+    display: flex;
+    gap: 20px;
+}
+
+.asset-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.asset-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.tickets {
+    display: flex;
+    gap: 40px;
+}
+
+.ticket-form,
+.ticket-list {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-form form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.ticket-form input,
+.ticket-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.ticket-form button {
+    background: #0b3d91;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.card img {
+    width: 100%;
+    /* take full card width */
+    max-width: 150px;
+    /* limit how big they get */
+    height: auto;
+    /* keep proportions */
+    object-fit: contain;
+    /* fit without cropping */
+    display: block;
+    /* remove inline gap */
+    margin: 0 auto;
+    /* center horizontally */
+    padding: 10px;
+    /* space inside */
+}
+
+/* Optional: make responsive for smaller screens */
+@media (max-width: 576px) {
+    .card img {
+        max-width: 120px;
+        padding: 8px;
+    }
+}
+
+.features .card {
+    display: flex;
+    align-items: center;
+    /* Vertically center image and text */
+    gap: 15px;
+    /* Space between image and text */
+}
+
+.features img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    /* Keep aspect ratio without stretching */
+    flex-shrink: 0;
+    /* Prevent image from shrinking */
+}
+
+.page-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* Ensures the image fills without distortion */
+}
+
+
+
+
+
+/*
+:root {
+    --brand-1: #0B6E4F;
+    --brand-2: #F2A900;
+    --neutral-1: #ffffff;
+    --neutral-2: #f4f6f8;
+    --text: #102026;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    margin: 0;
+    background: var(--neutral-1);
+}
+
+header {
+    background: var(--neutral-2);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--brand-1);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--brand-2);
+}
+
+.hero {
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(to right, var(--brand-1), var(--brand-2));
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    background: var(--brand-2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--brand-1);
+}
+
+footer {
+    background: var(--neutral-2);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+    */
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+    */
