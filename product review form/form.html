@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <p>Please complete the form below to submit your product review.</p>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <!-- Product Name -->
+            <label for="productName">Product Name <span class="required">*</span></label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- Options populated dynamically -->
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating <span class="required">*</span></legend>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5" title="5 stars">&#9733;</label>
+
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 stars">&#9733;</label>
+
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 stars">&#9733;</label>
+
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 stars">&#9733;</label>
+
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 star">&#9733;</label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installDate">Date of Installation <span class="required">*</span></label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Useful Features (check all that apply)</legend>
+                <label><input type="checkbox" name="features" value="durable"> Durable</label>
+                <label><input type="checkbox" name="features" value="easy-install"> Easy to Install</label>
+                <label><input type="checkbox" name="features" value="energy-efficient"> Energy Efficient</label>
+                <label><input type="checkbox" name="features" value="compact"> Compact Design</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="writtenReview">Written Review</label>
+            <textarea id="writtenReview" name="writtenReview" rows="4"
+                placeholder="Write your review here..."></textarea>
+
+            <!-- User Name -->
+            <label for="userName">Your Name</label>
+            <input type="text" id="userName" name="userName" placeholder="Optional">
+
+            <!-- Submit -->
+            <input type="submit" value="Add Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>Last Modification: <span id="lastModified"></span></p>
+        <p>Stanley Ifeanyi Tosin Eberendu &copy; 2025 Product Review Inc.</p>
+    </footer>
+
+    <script src="js/form.js"></script>
+    
+</body>
+
+</html>
